@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nossa impresa</title>
+    <link rel="stylesheet" href="style_sobre.css">
+
+    <!--CSS interno cor para todos os elementos <p>-->
+    <style>
+        p{
+            color: violet;
+        }   
+    </style>
+
+</head>
+<body>
+
+    <!--CSS inline cor do elemento-->
+    <h1 style="color:red;"> programador </h1>
+    <p> Nossa missao é ajudar vc a programar.</p>
+    <a href="index.html">Pagina principal</a>
+
+    <br><br><br><br><br>
+
+    <h2>continuação index.html</h2>
+    <div class="container">
+        <div class="content">
+            CONTEUDO
+        </div>
+    </div>
+
+    <h2>Ajuste de texto (CSS)</h2>
+        <table>
+            <tr>
+                <th>nome</th>
+                <th>função</th>
+                <th>exemplo</th>
+            </tr>
+            <tr>
+                <td>text-align:</td>
+                <td>alinhamento do texto</td>
+                <td>justify; center; right;</td>
+            </tr>
+            <tr>
+                <td>text-transform:</td>
+                <td>transforma uma caracteristica no texto inteiro</td>
+                <td>uppercase; lowercase; capitalize;</td>
+            </tr>
+            <tr>
+                <td>text-ident:</td>
+                <td>coloca uma identação no inicio do texto</td>
+                <td>35px</td>
+            </tr>
+            <tr>
+                <td>text-decoration:</td>
+                <td>decoração do texto</td>
+                <td>underline; overline; line-through; none;</td>
+            </tr>
+            <tr>
+                <td>letter-spacing:</td>
+                <td>espaço entre as letras</td>
+                <td>1.2px; -2px; (padrão é 0)</td>
+            </tr>
+            <tr>
+                <td>line-height:</td>
+                <td>altura da linha</td>
+                <td>2; 300%; 30px;</td>
+            </tr>
+            <tr>
+                <td>word-spacing:</td>
+                <td>espaço entre as palavras</td>
+                <td>5px</td>
+            </tr>
+            <tr>
+                <td>text-shadow:</td>
+                <td>sombra no texto</td>
+                <td>2px(dislocamento para direita) 2px(dislocamento para baixo) 5px(raio de desfoque) #bbb;(cor)</td>
+            </tr>
+            <tr>
+                <td>font-weight:</td>
+                <td>grossura das letras</td>
+                <td>400;(bold)</td>
+            </tr>
+        </table><br><br>
+
+        <h2>fontes de texto (CSS)</h2>
+        <h3>existe 3 familias genericas de fontes: as com serifa(com detalhes nos cantos das letras), sem serifa e monospace(todas as letras com a mesma largura)</h3>
+        <table>
+            <tr>
+                <th>nome</th>
+                <th>função</th>
+                <th>exemplo</th>
+            </tr>
+            <tr>
+                <td>font-family:</td>
+                <td>qual a fonte do texto</td>
+                <!--h1{arial, helvetica, sans-serif} fontes safes-->
+                <!--p{"comic sans MS", cursive, sans-serif} fontes safes-->
+                <td>arial, "comic sans MS",  (causo a primeira não esteja disponivel a segunda é usada, no caso de fontes com mais palavras no nome é nescessario aspas)</td>
+            </tr>
+            <tr>
+                <td>font-style:</td>
+                <td>estilo da fonte</td>
+                <td>normal; italic;</td>
+            </tr>
+            <tr>
+                <td>font-variant:</td>
+                <td>tudo na forma maiscula mas com variação normal no tamanho</td>
+                <td>normal; small-caps;</td>
+            </tr>
+        </table><br><br>
+
+        <h2>no google fontes é possivel pegar outras fontes e o site font squirrel tranforma fontes em Woff(arquivo mais leve) e ja escreve o arquivo CSS para ela</h2><br><br>
+        <h2>para fontes personalizadas usar:</h2>
+        <h3>@font-face: { <br> font-family: _______; <br> src: url(./____/____.otf)</h3><br><br>
+
+        <h2>estilo de link (CSS)</h2>
+        <table>
+            <tr>
+                <th>nome</th>
+                <th>função</th>
+                <th>exemplo</th>
+            </tr>
+            <tr>
+                <td>cursor:</td>
+                <td>altera o formato do cursor sobre o link</td>
+                <td>crosshair;</td>
+            </tr>
+            <tr>
+                <td>a:visited{</td>
+                <td>para alterar o link ja visitado</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a:hover{</td>
+                <td>para alterar o link enquanto o mouse estiver em cima dele</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a:active{</td>
+                <td>para alterar o link no momento do clik</td>
+                <td></td>
+            </tr>
+        </table><br><br>
+
+        <h2>estilos de listas (CSS)</h2>
+        <table>
+            <tr>
+                <th>nome</th>
+                <th>função</th>
+                <th>exemplo</th>
+            </tr>
+            <tr>
+                <td>list-style-type:(para desordenada)</td>
+                <td>altera a marcação dos topicos da lista</td>
+                <td>none; disc; circle; square;</td>
+            </tr>
+            <tr>
+                <td>list-style-type:(para ordenada)</td>
+                <td>altera a marcação dos topicos da lista</td>
+                <td>none; upper-roman; lower-alpha;</td>
+            </tr>
+            <tr>
+                <td>list-style-position:</td>
+                <td>altera se o marcador vai estar dentro ou fora da lista</td>
+                <td>inside;</td>
+            </tr>
+            <tr>
+                <td>list-style-image: url("");</td>
+                <td>altera a marcação dos topicos da lista para uma imagem</td>
+                <td></td>
+            </tr>
+        </table><br><br>
+</body>
+</html>

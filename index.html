@@ -1,0 +1,155 @@
+<!DOCTYPE html><!--  !-tab  prepara a estrutura HTML altomaticamentes-->
+<html>
+    <head>
+        <title>Minha primeira pagina</title>
+        <meta Charset="utf-8">
+
+        <!--arquivo CSS externo sendo linkado ao HTML-->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <!--link de id para ultima imagem-->
+        <a href="#calculo">calculo</a>
+
+        <!--class-->
+        <h1 class="verde">Titulo</h1>
+        <h2 class="azul">Sub-título</h2>
+
+            <p id="principal">
+                Paragrafo paragrafo paragrafo paragrafo parparagrafo paragrafo paragra
+                agrafo paragrafo paragrafo paragrafo paragrafo paragrafo paragrafo 
+                paragrafo paragrafo paragrafo paragrafo paragrafparagrafo paragrafo paragrafo 
+                o paragrafo paragrafo paragrafo paragrafo paragraparagrafo paragrafo paragrafo 
+                fo paragrafo paragrafo paragrafo paragrafo paragraparagrafo paragrafo paragrafo 
+                fo paragrafo paragrafo paragrafo paragrafo paragrparagrafo paragrafo paragrafo 
+                afo paragrafo paragrafo paragrafo paragrafo paragrparagrafo paragrafo
+            </p>
+
+            <!--USAR SEMPRE TAGS COM SEMANTICA(mais importancia)-->
+
+            <!--tag para juntar varios elementos e pode ser usada dentro de si mesma(não tem semantica)-->
+        <div id="paragrafos">
+            <p>Negrito com mais importancia<strong>(com SEMANTICA)</strong></p>
+
+            <p><em>Itálico</em></p>
+
+            <p><mark>Marcado</mark></p>
+
+            <p><small>Pequeno</small></p>
+
+            <p><del>Removido</del></p>
+
+            <p><ins>Sublinhado</ins></p>
+
+            <p><sub>Subscript</sub> alguma coisa <sub>2</sub></p>
+
+            <p><sup>Superscript</sup> como X<sup>2</sup> = 10</p>
+        </div>
+
+        <!--Hiperlink-->
+        <a href="Sobre.html">Sobre nós</a>
+
+        <!--Não é bom alterar tamanha pelo HTML é melhor sempre no CSS-->
+        <!--Imagem com endereço web e alterando tamanho com width-->
+        <img src="https://64.media.tumblr.com/7af4f219119c3b6b4fef17feb73ad456/f3f4cae89c8feb9e-85/s500x750/d5ba641123b04abb5e490d70f23c87ee3b71f014.png" alt="Calculo diferencial integral" width=300>
+
+        <!--Tranformando a imagem de baixo em um link-->
+        <a href="https://www.google.com/search?q=calculo+diferencial+e+integral&oq=calculo+diferencial+&aqs=chrome.1.69i57j0i512l9.7204j0j4&sourceid=chrome&ie=UTF-8">
+        
+        <!--Imagem baixada e salva com .jpg e alterando tamanho com height-->
+        <img id="calculo"src="./assets/calculo.jpg" alt=" Calculo diferencial integral" height=200></a>
+
+        <h2 class="azul">Lista de compras(lista desordenada)</h2>
+        <ul>
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Batata</li>
+        </ul>
+
+        <h2 class="azul">Ranking de vendedores(lista ordenada)</h2>
+        <ol>
+            <li>Marcela</li> 
+            <li>João</li> 
+            <li>Pedro</li> 
+        </ol>
+
+        <h2 class="azul">Tabela de contatos</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Igor</td>
+                <td>999999999</td>
+                <td>Igor321@gmail.com</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>2222222222</td>
+                <td>João321@gmail.com</td>
+            </tr>
+        </table>
+
+        <h2 class="azul">medidas absolutas: cemtimetro, milimetro, polegada, pixel, ponto, e picas</h2>
+        <div id="cm"></div>
+        <div id="mm"></div>
+        <div id="in"></div>
+        <div id="px"></div>
+        <div id="pt"></div>
+        <div id="pc"></div>
+
+        <h2 class="azul">EX de medidas relativas</h2>
+        <h2>EM|   1em=tamanho da fonte do elemento pai(container)=25px</h2>
+         texto no body
+         <div class="container">
+            texto no container
+            <div class="inside">
+                texto no inside
+            </div>
+         </div><br><br>
+        
+         <h2>REM    |1rem=tamanho da fonte do elemento riaz(HTML)</h2><br>
+
+         <h2>VW     |1vw=1% da largura da janela</h2><br>
+
+         <h2>VH     |1vh=1% da haltura da janela</h2><br>
+
+         <h2>VMIM   |1vmim=1% da menor dimenção da janela</h2><br>
+
+         <h2>VMAX   |1vmax=1% da maior dimenção da janela</h2><br>
+
+         <h2>%      |porcentagem relativa do elemento pai</h2>
+         
+         <br><br><br>
+
+         <h2 class="azul"> Margin distancia do elemento para fora</h2>
+         <div id="base"></div>
+
+         <div id="topo">
+            <div id="conteudo">
+                texto qualquer
+            </div>
+         </div>
+         outro texto
+
+         <h2>Padding distancia do elemento para dentro</h2>
+
+         <br><br><br>
+
+         <div class="borda">
+            conteudo
+         </div><br>
+         <div class="borda1">
+            conteudo
+         </div>
+
+        <!--Quebra de linha-->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <!--../ no endereço faz subir um nivel nas pastas e o ./ torna o endereço relativo-->
+    </body>
+</html>

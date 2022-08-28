@@ -1,0 +1,115 @@
+/* Comentario */
+
+/*possivel colocar em elementos HTML para usar na pagina inteira*/
+body{
+color: yellowgreen;
+} 
+#paragrafos{
+/*imagem de fundo*/
+background-image: url(./assets/fundo1.jpg);
+
+/*imagem de fundo sem repetição*/
+background-repeat: no-repeat;
+
+/*imagem de fundo na pagina/elemento inteiro*/
+/*tambem da para passar background-position:certer po exemplo*/
+background-size: cover; 
+
+/*imagem de fundo fixo*/
+background-attachment: fixed;
+}
+
+/* usando o id */
+#principal{
+    color: orchid;
+
+    /*cor de fundo com exadecimal*/
+    background-color: #00ffff;
+}
+
+/* usando o class */
+.verde{
+    color: red;
+
+    /*cor de fundo com rgba*/
+    background-color: rgba(255,255,0,0.7);
+}
+.azul{
+    color: blue;
+}
+
+/*medidas absolutas*/
+#cm{
+    background-color: blue;
+    width: 5cm;
+    height: 5cm;
+}
+#mm{
+    background-color: red;
+    width: 5mm;
+    height: 5mm;
+}
+#in{
+    background-color: blue;
+    width: 5in;
+    height: 5in;
+}
+#px{
+    background-color: red;
+    width: 5px;
+    height: 5px;
+}
+#pt{
+    background-color: blue;
+    width: 5pt;
+    height: 5pt;
+}
+#pc{
+    background-color: red;
+    width: 5pc;
+    height: 5pc;
+}
+
+.container{
+    /*modifica o tamanho da fonte*/
+    font-size: 25px;
+
+    width: 300px;
+    background: purple;
+}
+.inside{
+    font-size: 2em; /*50px*/
+
+    width: 2em; /*100px*/
+    background: blue;
+}
+
+#base{
+    height: 10px;
+    background-color: red;
+    color: white;
+}
+#topo{
+    background-color: blue;
+    color: white;
+    margin: 25px/*top*/ 30px/*right*/ 35px/*bottom*/ 40px/*left*/;
+}
+
+.borda{
+    /*Espesura da borda*/
+    border-width: 5px 2px 10px 15px;
+    /*estilo da borda
+    dotted=pontilhado
+    dashed=trassejado
+    nome=sem borda
+    hidden=escondida*/
+    border-style: solid;
+    /*border-top-color: blueviolet;*/
+    border-color: purple green tomato yellow;
+    /*quanto arredondar a borda(com 50% se faz um circulo)*/
+    border-radius: 5px;
+}
+.borda1{
+    /*forma simples*/
+    border: 5px dashed brown;
+}
